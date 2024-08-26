@@ -13,7 +13,7 @@ featuredImage:
   altText: Project thumbnail image
 media:
   type: ImageBlock
-  url: /images/bg2.jpg
+  url: /images/gallery-1.jpg
   altText: Project image
 ---
 Methodology
