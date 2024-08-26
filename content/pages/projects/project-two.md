@@ -9,7 +9,7 @@ description: >-
   predictions on the GBP/USD exchange rate using a classification algorithm.
 featuredImage:
   type: ImageBlock
-  url: /images/bg2.jpg
+  url: /images/Screen Shot 2024-01-26 at 12.56.07 AM.png
   altText: Project thumbnail image
 media:
   type: ImageBlock
