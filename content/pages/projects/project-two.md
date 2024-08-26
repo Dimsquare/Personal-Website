@@ -1,6 +1,6 @@
 ---
 type: ProjectLayout
-title: Machine Learning Model to make Predictions on the GBP/USD exchange rate
+title: Machine Learning Model making Predictions on the GBP/USD exchange rate
 colors: colors-a
 date: '2021-12-20'
 client: Awesome client
