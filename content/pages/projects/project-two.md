@@ -2,7 +2,7 @@
 type: ProjectLayout
 title: Machine Learning Model making Predictions on the GBP/USD exchange rate
 colors: colors-a
-date: '0004-12-20'
+date: '0020-12-20'
 client: Relevant
 description: >-
   It’s hard to imagine that I’ve that I wrote all this code by myself, probably
