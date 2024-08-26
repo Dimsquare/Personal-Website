@@ -68,7 +68,7 @@ sections:
         borderWidth: 1
         borderStyle: solid
   - type: TextSection
-    colors: colors-d
+    colors: colors-f
     variant: variant-b
     title: Previous Work Experiences
     subtitle: ''
