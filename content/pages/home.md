@@ -3,7 +3,7 @@ type: PageLayout
 title: Home
 sections:
   - type: HeroSection
-    title: I am an aspiring Computer Scientist
+    title: Aspiring Computer Scientist
     subtitle: 'I '
     text: >-
       Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
