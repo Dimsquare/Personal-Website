@@ -13,11 +13,20 @@ sections:
   - elementId: ''
     colors: colors-f
     backgroundSize: full
-    text: >-
-      ## Hey I’m a developer. I’ve been born and raised in the world, and that’s
-      also where I’m based. I’m currently a free agent, ex-this, ex-that,
-      ex-super big name. When I’m not coding, writing or creating, I eat
-      cereals. I have a dog, check her out [@mygod](https://www.stackbit.com/).
+    text: >+
+      ## I am an enthusiastic and diligent individual currently progressing
+      towards completing my AS Level. In the course of my studies, I am engaged
+      in a project focused on developing a program designed to predict the
+      GBP/USD exchange rate. This endeavour, along with my participation in
+      various enriching activities, has significantly developed my leadership,
+      teamwork, and networking abilities as well as confidence and presentation
+      skills. Notable experiences include participation in the InvestIn
+      engineering program, the Space Design competition, Model United Nations,
+      TedX Talks, multiple lectures and virtual work experiences through
+      Springpod. I am actively seeking work experience opportunities in the
+      field of Computer Science to further cultivate my strong interest in
+      science and lay the groundwork for a future career in Data Science.
+
     media:
       type: ImageBlock
       url: /images/about.jpg
