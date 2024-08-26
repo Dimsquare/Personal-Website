@@ -5,11 +5,10 @@ sections:
   - type: HeroSection
     title: Aspiring Computer Scientist
     subtitle: 'Specialist in Machine Learning. Proficient in Python, JavaScript and R.'
-    text: >-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    text: >
+      My name is Dubem Isiekwena and I am currently studying in Cardiff Sixth
+      Form College Cambridge. To find out more about me or view the projects I
+      have done so far, please refer to the About Me or Projects accordingly.
     actions: []
     colors: colors-f
     backgroundSize: full
