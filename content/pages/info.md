@@ -72,10 +72,6 @@ sections:
     subtitle: 'Previous Work Experiences:'
     images:
       - type: ImageBlock
-        url: /images/logo1.svg
-        altText: Logo one
-        caption: Logo one
-      - type: ImageBlock
         url: /images/logo2.svg
         altText: Logo two
         caption: Logo two
