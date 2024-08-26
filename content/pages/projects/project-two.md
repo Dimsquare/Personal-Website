@@ -5,9 +5,8 @@ colors: colors-a
 date: '2024-01-15'
 client: Relevant
 description: >-
-  It’s hard to imagine that I’ve that I wrote all this code by myself, probably
-  because I worked with an entire team :) but they definitely followed my lead
-  most of the time.
+  I undertook a project to create a machine learning model which made
+  predictions on the GBP/USD exchange rate using a classification algorithm.
 featuredImage:
   type: ImageBlock
   url: /images/bg2.jpg
