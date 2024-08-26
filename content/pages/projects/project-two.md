@@ -16,15 +16,90 @@ media:
   url: /images/bg2.jpg
   altText: Project image
 ---
+Methodology
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+            For the purpose of this artifact, I decided to create my own machine learning model using accurate daily data on the GBP/USD exchange rate and python libraries such as pandas, sklearn and matplotlib in order to build the model and visualize the data I was using. The method I was using and the fact my project relied on the forex market made my project lack a lot of flexibility as it is difficult to locate accurate sources of data. Furthermore, due to this lack of accuracy and wholeness of the data, data cleaning became a tedious process. 
 
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
 
-> “Everybody should learn to program a computer, because it teaches you how to think.”
 
-Vestibulum ullamcorper risus auctor eleifend consequat. Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
+Figure 1:
 
-Nam rutrum magna sed pellentesque lobortis. Etiam quam mauris, iaculis eget ex ac, rutrum scelerisque nisl. Cras finibus dictum ex sed tincidunt. Morbi facilisis neque porta, blandit mauris quis, pharetra odio. Aliquam dictum quam quis elit auctor, at vestibulum ex pulvinar. Quisque lobortis a lectus quis faucibus. Nulla vitae pellentesque nibh, et fringilla erat. Praesent placerat ac est at tincidunt. Praesent ultricies a ex at ultrices. Etiam sed tincidunt elit. Nulla sagittis neque neque, ultrices dignissim sapien pellentesque faucibus. Donec tempor orci sed consectetur dictum. Ut viverra ut enim ac semper. Integer lacinia sem in arcu tempor faucibus eget non urna. Praesent vel nunc eu libero aliquet interdum non vitae elit. Maecenas pharetra ipsum dolor, et iaculis elit ornare ac.
+|   |                                                                           |
+| - | ------------------------------------------------------------------------- |
+|   | ![](blob:https://create.netlify.com/4de25477-a47f-412d-b2d4-7edb682d8ecc) |
 
-Aenean scelerisque ullamcorper est aliquet blandit. Donec ac tellus enim. Vivamus quis leo mattis, varius arcu at, convallis diam. Donec ac leo at nunc viverra molestie ac viverra nisi. Proin interdum at turpis at varius. Nunc sit amet ex suscipit, convallis ligula eu, pretium turpis. Sed ultricies neque vel mi malesuada, et mollis risus lobortis. Sed condimentum venenatis mauris, id elementum dolor gravida ac. Sed sodales tempus neque, quis iaculis arcu tincidunt ut. Donec vitae faucibus dui. In hac habitasse platea dictumst. Donec erat ex, ullamcorper a massa a, porttitor porta ligula.
+\<div style="text-align: center">*
+Figure 1 represents the original values of the Forex Market*\</div>
+
+During the training of this model, multiple variables were used to produce this machine learning model such as a new column called “Tomorrow” which represents the value of the exchange rate on the next day in order to make comparisons so that the model can learn. The results of this comparison were then stored in the column “Target” which shows whether the market went up or down indicating whether or not the individual should invest based on the past data. These were included in the data preprocessing and cleaning stages of the model. During the training stage of the model, variables such as “train” and “test” were used to actually train and provide the avenue for the model to learn and predict the stock market. These values were stored in a new variable. Utilizing the [pandas]() library, I was able to display the accuracy of my machine learning model.
+
+
+
+Figure 2:
+
+|   |                                                                           |
+| - | ------------------------------------------------------------------------- |
+|   | ![](blob:https://create.netlify.com/65004bb4-a7ec-4560-b48a-9262daac1e05) |
+
+\<div style="text-align: center">
+*Figure 2 represents the Forex Market after the learning parameters have been added.*\</div>
+
+ 
+
+ 
+
+Data Collection and Preprocessing:
+
+            In order to acquire data on the forex market, I made use of Alpha Vantage, which is generally regarded as a reliable source of financial information. “Alpha Vantage is a free source for financial data that in many cases is more accurate than Yahoo Finance and Google Finance” (The Comprehensive R Archive Network, 2023). This source can be deemed reliable as R is known to be the best programming language and source when it pertains to statistical and financial data. Furthermore, the data on the Alpha Vantage library is updated daily, increasing the accuracy and reliability of this python library. Additionally, Alpha Vantage provides data from up to 20 years ago which is updated daily to improve the accuracy of the model. During the importing of the dataset, I encountered one major setback. I was not able to import the dataset on a regular Python IDE (Integrated Development Environment) which delayed my progress for a week trying to debug and find out the problem with my program. I eventually realized I needed to use an IDE known as Jupyter Notebook rather than Visual Studio Code in order to actually import this dataset which further reduces the flexibility of this program. When importing the dataset and introducing the “Tomorrow” variable, data cleaning and normalization was severely needed as various columns has “NaN” as their values, which would disrupt the flow of data and the result of the model. In order to eliminate this disruption, any column with this value was eliminated which reduced the amount of data to work with from 5000 to 4000. During the data processing, the most influential columns became the “Open” column which represents the value of the currency when the market opens, the “Tomorrow” column which represents the value of the currency when the market opens the next day and the “Target” column which indicates whether the market went up and down.
+
+Results and Analysis
+
+            The results of the machine learning model resulted in an average 57.2% accuracy rate over a period of two days. 
+
+
+
+|   |                                                                           |
+| - | ------------------------------------------------------------------------- |
+|   | ![](blob:https://create.netlify.com/e0d57e3d-1091-4b7d-80ad-1a9a1a98f98a) |
+
+
+
+
+
+*Day 1 results*
+
+* *
+
+|   |                                                                           |
+| - | ------------------------------------------------------------------------- |
+|   | ![](blob:https://create.netlify.com/64d20ce9-e798-4441-80cc-1568c527decf) |
+
+
+
+
+
+*Day 2 Results*
+
+
+
+|   |                                                                           |
+| - | ------------------------------------------------------------------------- |
+|   | ![](blob:https://create.netlify.com/0f0dd410-f005-4195-8a5b-035b1d3bf4f5) |
+
+
+
+
+The last diagram represents the modifications I made to the model in order to make it more accurate which resulted in an increase of 1% in accuracy. The new model was an improvement over the initial model because of a concept known as backtesting. “Backtesting in machine learning is a technique used to evaluate the performance and effectiveness of a machine learning model using historical data. It involves testing the model on past data to simulate how it would have performed if it had been used to make predictions during that period” (Zaidi, 2023). This improved the model because instead of directly trying to predict the exchange market in the near future, it makes predictions on the foreign exchange market on a known date, with a known value and adjusts to this known value accordingly.
+
+Additionally, I tried to take other factors into account such as trying to use the close ratio and non-financial factors into account but realized getting access to high quality and accurate data on the economic state of the countries will be difficult and time consuming. These changes to the model resulted in a reduction of its accuracy by 20%.
+
+
+
+|   |                                                                           |
+| - | ------------------------------------------------------------------------- |
+|   | ![](blob:https://create.netlify.com/815ee18f-e44f-48ed-a69c-7a3787417eb6) |
+
+\<div style="text-align: center">
+*Model after non-economic factors taken into consideration.*\</div>
+
+            These results have a significant impact as it really highlights the importance of having accurate and significant amounts of resources available in order to make an effective model. The fact that non-financial factors could not be taken into account in this model due to its inaccuracy shows that this model can be improved by up to 30%. This can be proven due to the research carried out by ThuongMai university which was referenced earlier. Despite the fact that they used EUR/USD which may have affected the accuracy of the results, both GBP and EUR have faced similar non-financial issues which may have an effect on the model. Hence, the model can significantly be improved along these lines.
